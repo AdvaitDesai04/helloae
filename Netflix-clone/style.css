@@ -1,0 +1,586 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+@import url('https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff');
+
+:root {
+    --rdcolor: rgb(229, 9, 20);
+    --bdrcolor: rgb(96, 96, 96);
+    --btncolor:rgba(0, 0, 0, 0.3)
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+
+}
+
+.main {
+    background-image: url("img/bg-netflix.jpg");
+    height: 99vh;
+    background-position: center center;
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+
+}
+
+.main .box {
+    background-color: black;
+    height: 99vh;
+    opacity: 0.69;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+    height: 64px;
+    align-items: center;
+    padding: 12px 0px 0px 0px;
+
+
+}
+
+.left {
+    display: flex;
+    gap: 0px 24px;
+}
+
+nav img {
+    width: 150px;
+    z-index: 10;
+    position: relative;
+
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+}
+
+.hero {
+
+
+    height: calc(100% - 76px);
+    color: white;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Netflix Font', sans-serif;
+    padding: 0 30px;
+    text-align: center;
+    gap: 10px 0px;
+
+
+}
+
+
+
+.hero>:nth-child(1) {
+    font-weight: 780;
+    font-size: 47px;
+    text-align: center;
+
+}
+
+.hero>:nth-child(2) {
+    font-weight: 400;
+    padding: 5px;
+
+    font-size: 24px;
+    text-align: center;
+
+
+}
+
+.hero>:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(95, 93, 93);
+
+}
+
+.flexb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 3px 8px;
+
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-red {
+
+    background-color: var(--rdcolor);
+    border-radius: 4px;
+    padding: 15px 40px;
+    font-size: 22px;
+    color: white;
+    border: none;
+
+
+}
+
+.btn-red:hover{
+    background-color:rgb(207, 14, 14);
+    transition-duration : 0.3s;
+}
+
+.btn-small {
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 5;
+    cursor: pointer;
+
+
+}
+
+.btn-lan {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 8px 20px;
+    font-size: 15px;
+    border: 1px solid gray;
+
+    gap: 0px 4px;
+    font-weight: 2;
+
+
+
+}
+
+.btn-txt {
+    height: 48px;
+    width: 330px;
+    background-color: var(--btncolor);
+    border: 1px solid var(--bdrcolor);
+    color: rgb(255,255,255);
+    text-align: left;
+    font-size: 16px;
+
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 1vw;
+    flex-wrap: wrap;
+
+}
+
+/* get started button */
+.button :nth-child(2) {
+    gap: 0px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.first{
+    padding:10vh 0vh;
+    max-width:75vw;
+    margin:auto;
+    color:white;
+    position:relative;
+    
+}
+
+
+
+
+.tvImg{
+    position:relative;
+    
+
+}
+
+.tvImg img{
+    width:38vw;
+   
+}
+
+.tvImg video{
+    position: absolute;
+    width: 73%;
+    right: 14.1%;
+    top: 21%;
+    z-index: -1;
+
+
+}
+
+.first div{
+    display:flex;
+    flex-direction: column;
+    gap:19px 0px;
+}
+
+.first div> :nth-child(1) {
+    color:white;
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+
+.first div> :nth-child(2){
+    font-size:22px;
+    /* font-weight:; */
+}
+
+
+
+
+.second{
+    display: flex;
+    color:white;
+    position: relative;
+    margin:auto;
+    width:75vw;
+    padding:10vh 0vh;
+    margin-bottom: 30px;
+    
+    position:relative;
+    
+    
+
+}
+
+.second >:nth-child(1)
+{
+    position:relative;
+    
+}
+
+.second .mbins{
+    position: absolute;
+    width: 55%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 22%;
+    top: 69%;
+    right: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.second .left img{
+    width:38vw;
+}
+.second .left .mbins img{
+    position:absolute;
+    height:80%;
+    width:auto;
+    display:block;
+    top:10%;
+    right: 80%;
+}
+
+.second .left .mbins .vid{
+    position:absolute;
+    height:80%;
+    width:auto;
+    left:95%;
+    
+    color:white;
+    
+   
+}
+
+
+.second .left .mbins .midbox >:nth-child(2){
+    color:blue;
+    
+}
+
+
+
+.second> :nth-child(2){
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    /* border: 1px solid gray; */
+    gap:20px 0px;
+
+
+
+}
+
+.second .right> :nth-child(1){
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.second .right> :nth-child(2){
+    font-size: 48px;
+    font-weight: 400;
+    font-size:22px;
+}
+
+/* most of the properties of third class are taken form first class please visit first class for properties of third calss */
+.third .tvImg video{
+    position: absolute;
+    width: 61%;
+    right: 20.1%;
+    top: 9%;
+    z-index: -1;
+    
+
+
+}
+
+.faq{
+    color:white;
+    max-width: 83vw;
+    margin:auto;
+    position: relative;
+    padding :34px;
+    
+
+    
+}
+.faq h2{
+    
+    text-align: center;
+    font-size:48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    
+}
+
+.faq .fboxex{
+    
+background-color:rgb(45, 45, 45);
+ width: 90%;
+ margin:10px auto;
+ padding:20px;
+ justify-content: space-between;
+border-radius: 1px;
+font-size:24px;
+font-weight:400;
+cursor: pointer;
+}
+
+/* hover for boxex */
+.faq .fboxex:hover{
+    background-color:rgb(84, 84, 84);
+    transition-duration : 0.5s;
+
+}
+
+.faq h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin:50px 0px 30px 0px;
+
+}
+
+
+/* footer section*/
+
+footer{
+    max-width:80vw;
+    margin: auto;
+    color:rgb(179, 179, 179);
+    padding:30px;
+   
+}
+
+footer h3{
+    margin:20px;
+    font-weight: 100;
+}
+
+footer h3 a{
+    color:rgb(179, 179, 179);
+}
+
+
+
+footer .flexbox{
+    display: flex;
+    justify-content: space-around;
+    gap:0pc 10px;
+}
+footer .pp{
+    display:flex;
+    flex-direction: column;
+    width:30vw;
+    max-width:40vw;
+    /* background-color: gray; */
+    
+    gap:25px 0px;
+    color:rgb(179, 179, 179);
+    padding:20px;
+
+    
+}
+
+footer .pp a{
+    color:rgb(179, 179, 179);
+
+    
+    
+}
+
+footer .footbt{
+    padding: 5px 11px;
+    margin:10px;
+}
+
+footer h4{
+    margin:20px;
+    font-weight: 100;
+
+}
+
+footer a:active{
+    color:red;
+}
+
+ /* media queries */
+ 
+@media screen and (max-width:1300px){
+    .first{
+        flex-wrap: wrap;
+    }
+
+    .tvImg img{
+        width:70vw;
+       
+    }
+    
+    .tvImg video{
+        position: absolute;
+        width: 73%;
+        right: 14.1%;
+        top: 21%;
+        z-index: -1;
+    
+    
+    }
+
+    .first div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:19px 0px;
+    }
+
+
+
+    /* for second */
+
+    .second{
+        flex-wrap: wrap;
+        
+    
+    }
+
+    .second .left img {
+        width: 70vw; /* Adjust the width as needed */
+    }
+
+    
+
+    .second .left .mbins img{
+        position:absolute;
+        height:80%;
+        width:auto;
+        display:block;
+        top:10%;
+        right: 80%;
+    }
+    
+    .second .left .mbins .vid{
+        position:absolute;
+        height:80%;
+        width:auto;
+        left:95%;
+        
+        color:white;
+        
+       
+    }
+
+    .second .mbins{
+        position: absolute;
+        /* width: 3%; */
+        margin:auto;
+        border: 2px solid gray;
+        border-radius: 10px;
+        height: 22%;
+        top: 69%;
+        right: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    
+
+    .second .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+    }
+
+    footer .flexbox{
+        display: flex;
+        justify-content: space-around;
+        gap:0pc 10px;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
